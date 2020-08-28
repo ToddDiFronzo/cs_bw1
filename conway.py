@@ -10,7 +10,7 @@ def myGrid(N):
     # returns a grid of N*N random values
     return np.random.choice(vals, N*N, p=[0.2, 0.8]).reshape(N, N)
 
-def rules(frameNum, img, grid, N):
+def rules(grid, N):
     newGrid = grid.copy()
     for i in range(N):
         for j in range(N):
